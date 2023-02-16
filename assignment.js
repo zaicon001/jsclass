@@ -23,8 +23,8 @@ function tellFortune (x, y, z, n){
   
   // LIFETIME SUPPY CALCULATOR
   function calculateSupply (age, amountPerDay){
-    let nn = 365 * age * amountPerDay
-    return result = "You will need " + nn + " of pringles to last you until the ripe old age of " + age 
+    let lifeTimeSupply = 365 * age * amountPerDay
+    return result = "You will need " + lifeTimeSupply + " of pringles to last you until the ripe old age of " + age 
   }
   console.log(calculateSupply(65, 2))
   console.log(calculateSupply(50, 3))
@@ -32,13 +32,13 @@ function tellFortune (x, y, z, n){
   
   // The Geometrizer 
   function calcCircumfrence (radius){
-    let nn = 2 *  3.14159 * radius
-    return result = "The circumference is " + nn
+    let circumference = 2 *  3.14159 * radius
+    return result = "The circumference is " + circumference
   }
   
   function calcArea (radius){
-    let nn = 3.14159 * radius * radius
-    return result = "The area is " + nn
+    let area = 3.14159 * radius * radius
+    return result = "The area is " + area
   }
   
   console.log (calcCircumfrence(3))
