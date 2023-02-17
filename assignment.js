@@ -1,10 +1,10 @@
 // JS CLASS ASSIGNMENT
 // THEFORTUNE TELLER
-function tellFortune (x, y, z, n){
+function tellFortune (jobTitle, location, partnersName, numberOfKids){
 
-    let result = "You will be an " + x + " in " + y + ",and married to " + z + " with " + n + " kids."
+    let result = "You will be an " + jobTitle + " in " + location + ",and married to " + partnersName + " with " + numberOfKids + " kids."
     return result
-    
+     
   }
   console.log (tellFortune("engineer", "Lagos", "wunmi", 5))
   console.log (tellFortune("banker", "Abuja", "jide", 2))
@@ -12,9 +12,9 @@ function tellFortune (x, y, z, n){
   
   
   // THE PUPPY AGE CALCULATOR
-  function calculateDogAge (dogAge){
-    let humanAge = 7 * dogAge
-    let result = "Your doggie is " + humanAge + " years old in human years!"
+  function calculateDogAge (puppyAge){
+    let dogYear = 7 * puppyAge
+    let result = "Your doggie is " + dogYear + " years old in dog years!"
     return result 
   
   }
@@ -31,7 +31,7 @@ function tellFortune (x, y, z, n){
   console.log(calculateSupply(50, 3))
   console.log(calculateSupply(20, 4))
   
-  // The Geometrizer 
+  // The GEOMETRIZER
   function calcCircumfrence (radius){
     let circumference = 2 *  3.14159 * radius
     return result = "The circumference is " + circumference
@@ -45,7 +45,7 @@ function tellFortune (x, y, z, n){
   console.log (calcCircumfrence(3))
   console.log (calcArea(3))
   
-  //The Temperature Converter
+  //The TEMPERATURE CONVERTER
   function celsiusToFahrenheit (celsius){
     let fahrenheit = (celsius * 1.8) + 32
     return result = celsius + "°C is " + fahrenheit + "°F"
