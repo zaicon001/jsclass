@@ -1,3 +1,4 @@
+// JS CLASS ASSIGNMENT
 // THEFORTUNE TELLER
 function tellFortune (x, y, z, n){
 
