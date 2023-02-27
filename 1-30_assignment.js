@@ -410,3 +410,53 @@ function createID (fName, lName){
   console.log (createID("mary", "lamb"))
   console.log (createID("John", "SMITH"))
   console.log (createID("mary", "smith"))
+
+  //24.  The last time we searched google with word and added spaces at the back of the Word
+//Google did some magik there in by changing all the spaces to +
+//Now your job is to write a function that does that magik google did the other days
+//Function should take aparamter and thne returned a result that has all the space chnagesd to +
+
+//sample below
+//google("Enjoying     ") ➞ "Enjoying+++++"
+//google("Zulfah  ") ➞ "Zulfah++"
+
+function google (searchname){
+  
+}
+
+//25. Reverse and Capitalize
+//Create a function that takes a string of lowercase characters and returns that string reversed and in upper case.
+
+//Sample below
+//reverseCapitalize("abc") ➞ "CBA"
+//reverseCapitalize("hellothere") ➞ "EREHTOLLEH"
+//reverseCapitalize("input") ➞ "TUPNI"
+
+//26. Check if input variable is a number or not
+//Write a function isValidNumber that checks if input variable is a
+//number or not The function should return “Variable is not a number” if its not and
+//return  “Variable is a valid number”.
+
+//NB: hint is read about the isNaN in the mdn docs
+
+//sample below
+//isValidNumber(11) //"11 is a valid number"
+//isValidNumber("19") //"19 is a valid number"
+//isValidNumber("xyz") //"xyz is not a number"
+//isValidNumber("17.5") //"17.5 is a valid number"
+//isValidNumber("21F") //"21F is not a number" 
+
+function isValidNumber(input) {
+    if (isNaN(input)) {
+      return input + " is not a number"
+    } else {
+      return input + " is a valid number"
+    }
+  }
+  
+  console.log (isValidNumber(11))
+  console.log (isValidNumber("19"))
+  console.log (isValidNumber("xyz"))
+  console.log (isValidNumber("17.5"))
+  console.log (isValidNumber("21F"))
+  
