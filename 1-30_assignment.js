@@ -343,3 +343,47 @@ function isPlural (word){
   console.log(isPlural("change"))
   console.log(isPlural("dudes"))
   console.log(isPlural("magic"))
+
+  //21. Default Mood
+//Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".
+//NB: USe the string interpolation to do this
+//Sample below
+//moodToday("happy") ➞ "Today, I am feeling happy"
+//moodToday("sad") ➞ "Today, I am feeling sad"
+//moodToday() ➞ "Today, I am feeling neutral"
+
+function moodToday (mood){
+    if (mood === null){ 
+      return "Today, I am feeling neutral" 
+    } else {
+      return "Today, I am feeling " + mood + ". However,if no argument is passed"
+          }
+  }
+  console.log (moodToday("happy"))
+  console.log (moodToday("sad"))
+  console.log (moodToday())
+  
+  
+  
+  //22. Case Insensitive Comparison
+  //Write a function that validates whether two strings are identical. Make it case insensitive.
+  
+  //Sample below
+  //match("hello", "hELLo") ➞ true
+  //match("motive", "emotive") ➞ false
+  //match("venom", "VENOM") ➞ true
+  //match("mask", "mAskinG") ➞ false
+  
+  function match (s1, s2){
+    let string1 = s1.toLowerCase()
+    let string2 = s2.toLowerCase() 
+    if (string1 === string2){
+      return true
+    } else {
+      return false
+    }
+  }
+  console.log (match("hello","hELLo"))
+  console.log (match("motive", "emotive"))
+  console.log (match("venom", "VENOM"))
+  console.log (match("mask", "mAskiNG"))
