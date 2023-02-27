@@ -459,4 +459,79 @@ function isValidNumber(input) {
   console.log (isValidNumber("xyz"))
   console.log (isValidNumber("17.5"))
   console.log (isValidNumber("21F"))
+
+  //27.  Verify the email address
+//write a function to determine whether an email address is valid or not.
+//NB: An email is valid if it contains "@" sign
+
+//sample below
+//isEmailValid("roshbon@gmail.com") ➞ true
+//isEmailValid("zaicongmail.com") ➞ false
+
+function isEmailValid(email) {
+    if (email.includes("@")) {
+      return true
+    } else {
+      return false
+    }
+  }
+  
+  console.log (isEmailValid("roshbon@gmail.com"))
+  console.log (isEmailValid("zaicongmail.com"))
+  
+  //28. Truncate String
+  //Write a JavaScript function to extract a specified number of characters from a string starting from the first character
+   
+  //Sample below
+  //truncate_string("Robin Singh",4)  ➞ Robi
+  //truncate_string("Ali Akerele",2)  ➞ Al
+  
+  
+  function truncate_string (name, num){
+    return name.substring(0, num)
+  }
+   console.log(truncate_string("Robin Singh",4)) 
+   console.log (truncate_string("Ali Akerele",2))
+  
+  //29. Repeat Data
+  //Write a JavaScript function to repeat a string a specified times. It takes 2 parameters
+  //The string and the number of repeatition
+  
+  //sample below
+   //repeat_string('Hello', 4)); "Hello Hello Hello Hello"
+   //repeat_string('Vote wisely', 2) "Vote wisely Vote wisely"
+  
+  function repeat_string (string, number) {
+    return string.repeat(number)
+  }
+  console.log (repeat_string('Vote wisely ', 2))
+  console.log (repeat_string('Hello ', 4))
+  
+  
+  //30. Hello; Hello World; World
+  //Write a function that takes an integer and:
+  //If the number is a multiple of 3, return "Hello".
+  //If the number is a multiple of 5, return "World".
+  //If the number is a multiple of both 3 and 5, return "Hello World".
+  //Sample below
+  //helloWorld(3) ➞ "Hello"
+  //helloWorld(5) ➞ "World"
+  //helloWorld(15) ➞ "Hello World"
+  
+  
+  function helloWorld (number){
+    if (number % 3 === 0){
+      return "Hello"
+    } else if (number % 5 === 0){
+      return "World"
+    } else if ((number % 5 === 0) && (number % 3 === 0)){
+      return "Hello World"
+    } else {
+      return number + " is not a multiple"
+    }
+  }
+  
+  console.log (helloWorld(3))
+  console.log (helloWorld(5))
+  console.log (helloWorld(15))
   
