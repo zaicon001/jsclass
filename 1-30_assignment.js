@@ -387,3 +387,26 @@ function moodToday (mood){
   console.log (match("motive", "emotive"))
   console.log (match("venom", "VENOM"))
   console.log (match("mask", "mAskiNG"))
+
+  //23 City School Creating IDS
+//Many IDS (for emails or Google ID) are created using the person's name.
+//Create a function that will return a four-character ID using the person's first name and last name.
+//The first character will be the first letter of the first name but in lowercase. 
+//The next three characters will be the first three characters of the last name, but the first letter will be capitalized and the other two will be in lower case.
+
+//Sample below
+//createID("mary", "lamb") ➞ "mLam"
+//createID("John", "SMITH") ➞ "jSmi"
+//createID("mary", "smith") ➞ "mSmi"
+
+function createID (fName, lName){
+    let firstNameFirstLetter = fName.charAt(0)
+    let lastNameFirstLetter = lName.charAt(0)
+    let lastTwoLettersOfLName = lName.substring(1,3)
+    
+    return firstNameFirstLetter.toLowerCase() + lastNameFirstLetter.toUpperCase() + lastTwoLettersOfLName.toLowerCase()
+  }
+  
+  console.log (createID("mary", "lamb"))
+  console.log (createID("John", "SMITH"))
+  console.log (createID("mary", "smith"))
