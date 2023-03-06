@@ -301,6 +301,11 @@ console.log(firstLast("Adeyemi"))
 //wumbo("MEET ME IN WARSAW") ➞ "WEET WE IN WARSAW"
 //wumbo("WUMBOLOGY") ➞ "WUWBOLOGY"
 
+
+function wumbo (wumbology){
+  return wumbology.replace("M", "W")
+}
+
 //17. Reverse the Order of a String
 //Create a function that takes a string as its argument and returns the string in reversed order.
 //Sample below
@@ -362,10 +367,10 @@ function isPlural (word){
 //moodToday() ➞ "Today, I am feeling neutral"
 
 function moodToday (mood){
-    if (mood === null){ 
-      return "Today, I am feeling neutral" 
+    if (mood ){ 
+      return "Today, I am feeling " + mood + ". However,if no argument is passed" 
     } else {
-      return "Today, I am feeling " + mood + ". However,if no argument is passed"
+      return "Today, I am feeling neutral"
           }
   }
   console.log (moodToday("happy"))
