@@ -303,7 +303,7 @@ console.log(firstLast("Adeyemi"))
 
 
 function wumbo (wumbology){
-  return wumbology.replace("M", "W")
+  return wumbology.replaceall("M", "W")
 }
 
 //17. Reverse the Order of a String
@@ -323,9 +323,13 @@ function wumbo (wumbology){
 //checkEnding("feminine", "nine") ➞ true
 //checkEnding("convention", "tio") ➞ false
 
-//function checkEnding (firstString, secondString) {
-  //firstStringEnds = firstSrting.substring (0,4)
-//}
+function checkEnding(a,b){
+  if (a.endswith(b)){
+    return true
+  }else {
+    return false
+  }
+}
 
 //19. Return the Middle Character(s) of a String
 //Create a function that takes a string and returns the middle character(s). If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.
