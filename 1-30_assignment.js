@@ -519,19 +519,18 @@ function isEmailValid(email) {
   //helloWorld(15) ➞ "Hello World"
   
   
-  function helloWorld (number){
-    if (number % 3 === 0){
-      return "Hello"
-    } else if (number % 5 === 0){
-      return "World"
-    } else if ((number % 5 === 0) && (number % 3 === 0)){
+  function helloWorld(number) {
+    if (number % 5 === 0 && number % 3 === 0) {
       return "Hello World"
+    } else if (number % 5 === 0) {
+      return "World"
+    } else if (number % 3 === 0) {
+      return "Hello"
     } else {
       return number + " is not a multiple"
     }
-  }
   
   console.log (helloWorld(3))
   console.log (helloWorld(5))
   console.log (helloWorld(15))
-  
+  }
