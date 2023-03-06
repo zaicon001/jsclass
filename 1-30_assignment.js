@@ -552,3 +552,10 @@ function isEmailValid(email) {
   console.log (helloWorld(5))
   console.log (helloWorld(15))
   }
+
+  //|| = OR
+//new Date()
+//new Date().getHours()
+//new Date().getMinutes()
+//new Date().getFullYear()
+//new Date().getMonth()
