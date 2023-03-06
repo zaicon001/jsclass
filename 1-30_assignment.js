@@ -202,11 +202,20 @@ console.log(isPlural("magic"))
 //fifth("a", 2, 3, true, "five") ➞ "string"
 //fifth() ➞ "Not enough arguments"
 
-function fifth (ar1, ar2, ar3, ar4, ar5) {
-  if (arguments.length < 5) {
-    return "Not enough arguments"
-  } else {
-    return typeof ar5 
+//function fifth (ar1, ar2, ar3, ar4, ar5) {
+  //if (arguments.length < 5) {
+    //return "Not enough arguments"
+  //} else {
+  //  return typeof ar5 
+  //}
+//}
+
+function fifth (){
+  let argsLength = arguments.length
+  if (argsLength < 5){
+    return "not enough argument"
+  }else {
+    return typeof(arguments[4])
   }
 }
 
