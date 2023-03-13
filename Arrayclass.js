@@ -168,3 +168,16 @@ return b - a
 data.filter(function(a) {
 return  a % 2 !== 0 // to find odd numbers
 })
+
+let arr1 = [1,2,3,4,5,6]
+let arr2 = []
+arr1.forEach(function(number,index){
+  return arr2.push(number * 5)
+})
+
+//MAP // Map is same thing as forEach, however, forEach has memory implication(low), while, .map has speed implication(fast).
+
+const mutliplyBy5 = arr1.map(function(number, index){
+return number * 5
+
+})
