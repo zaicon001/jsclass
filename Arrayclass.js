@@ -166,7 +166,7 @@ return b - a
 })
 
 //FILTER 
-data.filter(function(a) {
+data(function(a) {
 return  a % 2 !== 0 // to find odd numbers
 })
 
@@ -280,6 +280,38 @@ console.log(numb.sort()) // ["ade", "ayo", "tola", "tolami", "chika", "zain"]
 let arr3 = [34,30,1,130,10,20,301,40,50]
 console.log(arr3.sort()) // [1,10,130,20,30,301,34,40,50] According to ASCII
 
+//SORT WITH PARAMETERS
+
+let arr4 = [34,30,1,130,10,20,301,40,50]
+arr4.sort(function(a,b){
+  return a - b  // ascending order
+  return b - a // descending order
+})
+
+// MAP
+
+//Difference between forEach and Map.
+// Map only takes one line of logic 
+// forEach doesn't return any new memory. while Map automatically create a new array/memory for the result
+
+const mapped = arr.map (function(item, index){
+  return item * 5
+})
+console.log(mapped)
+
+//SORT 
+let arr5 = [34,30,1,130,10,20,301,40,50]
+arr5.filter(function(a){
+a > 30 
+
+})
+
+//NESTED ARRAY
+let nested = [1,56,["nike", "abbey", "45"[45,23]], "zaid", 50]
+
+console.log(nested[2]) // ["nike", "abbey", "45"[45,23]]
+console.log(nested[2][1]) // "abbey"
+console.log(nested[3].charAt(0)) // "z"
 
 
 
