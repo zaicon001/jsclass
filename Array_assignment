@@ -1,0 +1,43 @@
+
+//URL" https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+
+function smallerNumber(nums) {
+  const result = []
+
+  nums.forEach((num, index) => {
+    let count = 0
+    nums.forEach((innerNum, innerIndex) => {
+      if (innerIndex !== index && innerNum < num) {
+        count++
+      }
+    })
+    result.push(count)
+  })
+
+  return result
+}
+
+
+
+// 2. https://leetcode.com/problems/left-and-right-sum-differences/
+
+function findArrAnswer(nums) {
+    let leftSum = []
+    let rightSum = []
+    let answer = []
+  
+    // Calculate left sum for each index
+    let sum = 0
+    nums.forEach((num, i) => {
+      leftSum[i] = sum;
+     
+    })
+
+
+   // 3. https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
+
+    function kidsWCandies(candies, extraCandies) {
+        const maxCandies = Math.max(...candies)
+
+        return candies.map(candy => candy + extraCandies >= maxCandies)
+    }
