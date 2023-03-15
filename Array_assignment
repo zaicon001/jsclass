@@ -39,5 +39,5 @@ function findArrAnswer(nums) {
     function kidsWCandies(candies, extraCandies) {
         const maxCandies = Math.max(...candies)
 
-        return candies.map(candy => candy + extraCandies >= maxCandies)
+        return candies.map
     }
