@@ -244,3 +244,36 @@ function stringPairs(stringtoArray){
     })
   }
   
+
+  //14. Word Endings
+//Create a function that adds a string ending to each member in an array.
+
+//Sample cases
+//addEnding(["clever", "meek", "hurried", "nice"], "ly") 
+//➞ ["cleverly", "meekly", "hurriedly", "nicely"]
+//addEnding(["new", "pander", "scoop"], "er")
+//➞ ["newer", "panderer", "scooper"]
+//addEnding(["bend", "sharpen", "mean"], "ing")
+//➞ ["bending", "sharpening", "meaning"]
+
+function addEnding (word, ending){
+    let result = []
+    word.forEach(function(el, i){
+    result.push(el + ending)
+    })
+    return result
+  }
+  
+  console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly") )
+  console.log(addEnding(["new", "pander", "scoop"], "er"))
+  console.log(addEnding(["bend", "sharpen", "mean"], "ing"))
+
+
+  //15. Spelling it Out
+//Create a function which takes in a word and spells it out, by consecutively adding letters until the full word is completed.
+
+//Sample cases
+//spelling("bee") ➞ ["b", "be", "bee"]
+//spelling("happy") ➞ ["h", "ha", "hap", "happ", "happy"]
+//spelling("eagerly") ➞ ["e", "ea", "eag", "eage", "eager", "eagerl", "eage"]
+
