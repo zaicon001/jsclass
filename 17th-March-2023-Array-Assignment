@@ -182,4 +182,42 @@ return  a === NAN(arr)
 }
 console.log (filterArray([1, 2, 3, "a", "b", 4]))
 
+//11. The Forbidden Letter
+//Given a letter and an array of words, return whether the letter does not appear in any of the words.
 
+//Sample cases
+//forbiddenLetter("r", ["rock", "paper", "scissors"]) ➞ false
+//forbiddenLetter("a", ["spoon", "fork", "knife"]) ➞ true
+//forbiddenLetter("m", []) ➞ true
+
+//function forbiddenLetter(letter, words) {
+ 
+
+//12. Cleaning Up Messy Arrays
+//Create a function that takes an array. This array will contain numbers represented as strings.
+
+//Your function should split this array into two new arrays. The first array should contain only even numbers. The second only odd. Then, wrap these two arrays in one main array and return it.
+
+//Return an empty array if there are no even numbers, or odd.
+
+//Sample cases
+//cleanUpArray(["8"]) ➞ [[8], []]
+//cleanUpArray(["11"]) ➞ [[], [11]]
+//cleanUpArray(["7", "4", "8"]) ➞ [[4, 8], [7]]
+//cleanUpArray(["9", "4", "5", "8"]) ➞ [[4, 8], [9, 5]]
+
+function cleanUpArray (arr){
+    arrayToString = arr.join()
+    let evenNumber = []
+    let oddNumber = []
+    arrayToString.forEach(function(el,i){
+     if (el % 2 === 0) {
+      return evenNumber.push(arrayToString)  
+     } else {
+       return oddNumber.push(arrayToString) 
+     } 
+      return "["+ evenNumber + "," + oddNumber + "]"
+    })
+  }
+ 
+ console.log (cleanUpArray (["7", "4", "8"]))
