@@ -319,6 +319,15 @@ function stringPairs(stringtoArray){
 //addEnding(["bend", "sharpen", "mean"], "ing")
 //➞ ["bending", "sharpening", "meaning"]
 
+function addEnding(arr,ending){
+    let res = arr.map(function(word){
+        return `${word}${ending}`
+    })
+}
+
+
+
+
 function addEnding (word, ending){
     let result = []
     word.forEach(function(el, i){
@@ -340,3 +349,19 @@ function addEnding (word, ending){
 //spelling("happy") ➞ ["h", "ha", "hap", "happ", "happy"]
 //spelling("eagerly") ➞ ["e", "ea", "eag", "eage", "eager", "eagerl", "eage"]
 
+function spelling(word){
+    let result = []
+    for (let i = 1; i <= word.length; i++) {
+      result.push(word.substring(0, i))
+    }
+    return result
+  }
+
+  //function spelling(word){
+    //   let splitted = word.split('')
+    //   let res = []
+    //   splitted.forEach(function(el,i){
+    //     res.push(splitted.slice(0, i + 1).join(''))
+    //   })
+    //   return res
+    // }
