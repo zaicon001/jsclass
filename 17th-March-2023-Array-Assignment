@@ -357,11 +357,11 @@ function spelling(word){
     return result
   }
 
-  //function spelling(word){
-    //   let splitted = word.split('')
-    //   let res = []
-    //   splitted.forEach(function(el,i){
-    //     res.push(splitted.slice(0, i + 1).join(''))
-    //   })
-    //   return res
-    // }
+  function spelling(word){
+     let splitted = word.split('')
+       let res = []
+      splitted.forEach(function(el,i){
+       res.push(splitted.slice(0, i + 1).join(''))
+     })
+         return res
+    }
