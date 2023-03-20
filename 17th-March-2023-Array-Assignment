@@ -74,7 +74,8 @@ console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]))
 ///valueAt([1, 2, 3, 4], 6.535355314 / 2) ➞ 4
 
 function valueAt(arr, index) {
-  return arr[index]
+const arrIndex = Math.floor(index)
+  return arr[arrIndex ]
 }
 
 console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2))
@@ -148,7 +149,7 @@ console.log(invertArray([]))
 //Write a function that takes an array of drinks and returns an array of only drinks with no sugar in them. Drinks that contain sugar (in this challenge) are:
 
 function skipTooMuchSugarDrinks(drinks) {
-const sugarFreeDrinks = drinks.filter(drink => drink !== "cola" && drink !== "fanta")
+const sugarFreeDrinks = drinks.filter(drinks => drinks !== "cola" && drinks !== "fanta")
   //const sugarFreeDrinks = drinks.filter(drinks !== "cola" && drinks !== "fanta")
   return sugarFreeDrinks
 }
@@ -175,11 +176,29 @@ console.log(skipTooMuchSugarDrinks(["lemonade", "beer", "water"]))
 //filterArray(["Nothing", "here"]) ➞ []
 
 
+
 function filterArray(arr){
+    let result = []
   arr.filter(function(a) {
-return  a === NAN(arr) 
-  })
+if (typeof(item)=== "number"){
+    result.push(item)
 }
+  })
+  return result
+}
+
+
+function filterArray(arr){
+    let result = []
+  arr.forEach(function(el, i) {
+if (typeof(el)=== "number"){
+    result.push(item)
+}
+  })
+  return result
+}
+
+
 console.log (filterArray([1, 2, 3, "a", "b", 4]))
 
 //11. The Forbidden Letter
@@ -190,7 +209,24 @@ console.log (filterArray([1, 2, 3, "a", "b", 4]))
 //forbiddenLetter("a", ["spoon", "fork", "knife"]) ➞ true
 //forbiddenLetter("m", []) ➞ true
 
-//function forbiddenLetter(letter, words) {
+function forbiddenLetter(letter, arr) {
+    if (arr.includes(letter)){
+        return false
+    } else {
+        return true
+    }
+}
+
+function forbiddenLetter(letter, arr) {
+    arr.forEach(function (word) {
+        if (word.includes(letter)){
+            return false
+        } else{
+            return true
+        }
+    })
+}
+
  
 
 //12. Cleaning Up Messy Arrays
@@ -219,6 +255,33 @@ function cleanUpArray (arr){
       return "["+ evenNumber + "," + oddNumber + "]"
     })
   }
+//////
+  function cleanUpArray(arrayValues){
+    let evenArrays = []
+    let oddArrays = []
+    arrayValues.forEach(arrayValue => {
+     if (arrayValue % 2 === 0){
+      evenArrays.push(Number(arrayValue))  
+    } else if (arrayValue % 2 != 0) {
+      oddArrays.push(Number(arrayValue))
+    } else{}
+    })
+    return [evenArrays, oddArrays]
+  
+  }
+
+  //function cleanUpArray(nums){
+    //   let odd = []
+    //   let even = []
+    //   nums.forEach(function(num,i){
+    //     if(parseInt(num) % 2 === 0){
+    //       even.push(parseInt(num))
+    //     }else{
+    //       odd.push(parseInt(num))
+    //     }
+    //   })
+    //   return [even, odd]
+    // }
  
  console.log (cleanUpArray (["7", "4", "8"]))
 
