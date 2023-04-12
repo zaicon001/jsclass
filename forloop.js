@@ -1,3 +1,52 @@
+
+let arr2 = [2,4,3,5,7,4,8,9,11]
+// add 10 to all the elemement 
+let res1 = []
+for (i = 0; i< arr2.length; i++){
+  res1.push(arr2[i] + 10) 
+}
+console.log(res1)
+
+let res2 = []
+for (arr in arr2){
+  res2.push(arr2[arr] + 10) 
+}
+console.log(res2)
+
+let res3 = []
+for (arr of arr2){
+ res3.push(arr + 10) 
+}
+console.log(res3)
+
+let res4 =[]
+arr2.forEach(function(el,i){
+  res4.push(el + 10)
+})
+console.log(res4)
+
+let res5 = []
+arr2.forEach(el => res5.push(el + 10))
+console.log(res5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Iteration -- Looping
 
 //For
